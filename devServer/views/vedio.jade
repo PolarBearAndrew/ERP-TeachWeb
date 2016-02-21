@@ -1,0 +1,14 @@
+extends container
+
+block content
+	-for(var i = 0; i < data.length; i++)
+		-var v = data[i];
+		h1.title= v.title
+		h2.subtitle= v.subTitle
+		center
+			iframe(width='854', height='480', src=v.url, frameborder='0', allowfullscreen='')
+		br
+		hr
+		br
+
+	include footer

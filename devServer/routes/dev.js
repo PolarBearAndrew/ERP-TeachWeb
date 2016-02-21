@@ -67,9 +67,9 @@ router.get('/_admin', (req, res, next) => {
   res.render('_admin');
 });
 
-router.get('/:page', (req, res, next) => {
-	console.log('use /:page');
-  res.render(req.params.page.replace(/.html/, ''));
-});
+// router.get('/:page', (req, res, next) => {
+// 	console.log('use /:page');
+//   res.render(req.params.page.replace(/.html/, ''));
+// });
 
 module.exports = router;

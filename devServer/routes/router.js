@@ -9,5 +9,12 @@ var queryString = require('../feature/queryString.js');
 
 var data = require('../data');
 
+// console.log('data', data.vedio);
+
+router.get('/vedio', (req, res, next) => {
+  res.render('vedio', { data : data.vedio });
+  // res.render('vedio');
+});
+
 
 module.exports = router;
