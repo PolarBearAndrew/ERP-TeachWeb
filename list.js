@@ -3,6 +3,7 @@
 
 var list = [
 	{ page: 'home', data: '' },
+	{ page: 'vedio', data: 'vedio' },
 ];
 
 module.exports = list;

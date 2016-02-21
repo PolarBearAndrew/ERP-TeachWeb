@@ -13,7 +13,10 @@ var data = require('../data');
 
 router.get('/vedio', (req, res, next) => {
   res.render('vedio', { data : data.vedio });
-  // res.render('vedio');
+});
+
+router.get('/home', (req, res, next) => {
+  res.render('home');
 });
 
 
