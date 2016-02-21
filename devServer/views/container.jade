@@ -1,7 +1,7 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title OIT ERP Web
+	title ERP 企業資源規劃
 	
 	//- link(rel='stylesheet', type='text/css', href='./semantic-ui/semantic.css')
 	//- link(rel='stylesheet', type='text/css', href='./asset/stylesheets/reset.css')
@@ -9,7 +9,19 @@ head
 	block styleSheet
 	
 body
-	.container
+	.container(style='padding-top:10px')
+		nav.navbar
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='./home.html') 課程介紹
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='./books.html') 教材與講義
+			p.navbar-item.is-centered
+				img(src='./asset/images/oit.png', alt='', style='height: 120px;')
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='#') 數位教材-影音
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='#')= '模擬考測驗題 (Flash)'
+
 		block content
 	
 	//- script(src='https://code.jquery.com/jquery-2.1.4.min.js')
