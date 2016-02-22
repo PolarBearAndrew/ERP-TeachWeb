@@ -23,6 +23,10 @@ router.get('/ppts2', (req, res, next) => {
   res.render('ppts2', { data : data.ppts2 });
 });
 
+router.get('/flash', (req, res, next) => {
+  res.render('flash');
+});
+
 router.get('/home', (req, res, next) => {
   res.render('home');
 });

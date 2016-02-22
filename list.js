@@ -3,6 +3,7 @@
 
 var list = [
 	{ page: 'home', data: '' },
+	{ page: 'flag', data: '' },
 	{ page: 'vedio', data: 'vedio' },
 	{ page: 'ppts', data: 'ppts' },
 	{ page: 'ppts2', data: 'ppts2' },
