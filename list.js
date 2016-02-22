@@ -4,6 +4,8 @@
 var list = [
 	{ page: 'home', data: '' },
 	{ page: 'vedio', data: 'vedio' },
+	{ page: 'ppts', data: 'ppts' },
+	{ page: 'ppts2', data: 'ppts2' },
 ];
 
 module.exports = list;

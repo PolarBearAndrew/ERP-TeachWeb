@@ -15,6 +15,14 @@ router.get('/vedio', (req, res, next) => {
   res.render('vedio', { data : data.vedio });
 });
 
+router.get('/ppts', (req, res, next) => {
+  res.render('ppts', { data : data.ppts });
+});
+
+router.get('/ppts2', (req, res, next) => {
+  res.render('ppts2', { data : data.ppts2 });
+});
+
 router.get('/home', (req, res, next) => {
   res.render('home');
 });
