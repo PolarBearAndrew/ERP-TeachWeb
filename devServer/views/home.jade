@@ -1,6 +1,65 @@
 extends container
 
 block content
-	h1 this is home page
+	.columns
+		.column
+			center
+			nav.menu
+				p.menu-heading
+					| 企業資源規劃 ENTERPRISE RESOURCE PLANNING
+				//- p.menu-tabs
+				//- 	a(href='#') 
+				//- 	a(href='#') Public
+				//- 	a(href='#') Private
+				//- 	a(href='#') Sources
+				//- 	a(href='#') Forks
+				a.menu-block(href='#')
+					span.menu-icon
+						i.fa.fa-book
+					|     開課系所
+					br
+					br
+					| 亞東技術學院 日間部四技管理暨健康學群
+				a.menu-block.is-active(href='#')
+					span.menu-icon
+						i.fa.fa-book
+					|     課程目標 (Goal)
+					br
+					br
+					| 認識企業資源規劃(ERP)之理論與觀念，並熟習鼎新ERP系統之操作與原理，了解ERP在實務界之真實運作，並輔導考取ERP軟體應用師-配銷模組(GP版)之證照
+				a.menu-block(href='#')
+					span.menu-icon
+						i.fa.fa-book
+					|     指定用書 (TextBook)
+					br
+					br
+					| (1) 鼎新Workflow ERP GP應用人才培訓系列－ERP基礎觀念及導入方法篇
+					| (2) 鼎新Workflow ERP GP應用人才培訓系列－配銷模組應用篇
+				.menu-block
+					a.button.is-primary.is-outlined.is-fullwidth(href='http://portal.oit.edu.tw/' target='_blank')
+						| 前往個人 Portal
+
+		.column
+			center
+				.card
+					figure.card-image.is-4x3
+						img(src='http://placehold.it/300x225', alt='')
+					.card-content
+						.media
+							.media-left
+								figure.image.is-32x32
+									img(src='http://placehold.it/64x64', alt='Image')
+							.media-content
+								p.title.is-5 賴鍵元 老師
+								p.subtitle.is-6 助理教授
+						.content
+							| 大家對於內容有任何疑問，有空可以寄 mail 給老師喔~ 老師平日會固定每日收信，會盡快回覆各位同學。
+							| .
+							br
+							a(href='#') 校內分機#5315
+							br
+							a(href='mailto:fi012@mail.oit.edu.tw') fi012@mail.oit.edu.tw
+							br
+							small 11:09 PM - 1 Jan 2016
 	include footer
 		
