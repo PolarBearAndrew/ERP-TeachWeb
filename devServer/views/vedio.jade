@@ -1,6 +1,14 @@
 extends container
 
 block content
+	section.hero(style="background-color:#F5F7FA")
+		.hero-content
+			.container
+				h1.title
+					| 教學影片列表
+				h2.subtitle
+					| 企業資源規劃 ENTERPRISE RESOURCE PLANNING
+	hr
 	-for(var i = 0; i < data.length; i++)
 		-var v = data[i];
 		h1.title= v.title
