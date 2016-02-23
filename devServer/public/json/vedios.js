@@ -1,4 +1,4 @@
-var vedio = [
+var vedios = [
 	{
 		title : '01 企業資源規劃之發展與趨勢',
 		url : 'https://www.youtube.com/embed/k7vy4okEDpY',
