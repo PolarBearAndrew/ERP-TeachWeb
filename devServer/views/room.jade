@@ -1,0 +1,18 @@
+extends container
+
+block content
+	section.hero(style="background-color:#F5F7FA")
+		.hero-content
+			.container
+				h1.title
+					| 各張章節教室
+				h2.subtitle
+					| 企業資源規劃 ENTERPRISE RESOURCE PLANNING
+	hr
+	center
+		span.select
+			select
+				- for( var i = 0; i < vedio.length; i++ )
+					option= vedio[i].title
+	hr
+	
