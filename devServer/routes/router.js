@@ -34,14 +34,6 @@ router.get('/room/', (req, res, next) => {
 	});
 });
 
-router.get('/room/:id', (req, res, next) => {
-	res.render('room', {
-		vedio : data.vedio,
-		ppts : data.ppts.concat(data.ppts2),
-	});
-});
-
-
 router.get('/:page', (req, res, next) => {
 	console.log('use /:page');
   res.render(req.params.page.replace(/.html/, ''));

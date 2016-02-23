@@ -15,4 +15,18 @@ block content
 				- for( var i = 0; i < vedio.length; i++ )
 					option= vedio[i].title
 	hr
+	section#notify.hero.is-medium.is-primary.is-bold
+		.hero-content
+			.container
+				h1.title
+					| 請在上方選擇對應的課程名稱
+				h2.subtitle
+					| 搜尋簡報 + 課程影片
+
+	block javaScript
+		script(src='./json/ppts.js')
+		script(src='./json/vedios.js')
+		script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+		script(src='./asset/javascripts/getQueryParams.js')
+		script(src='./asset/javascripts/room.js')
 	
