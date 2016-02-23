@@ -41,7 +41,8 @@ router.post('/build', (req, res, next) => {
 
     // request file
     request({
-      url:  queryString( 'http://127.0.0.1:8080/', { page: val.page, data: val.data } ),
+      // url:  queryString( 'http://127.0.0.1:8080/', { page: val.page, data: val.data } ),
+      url:  'http://127.0.0.1:8080/' + val.page,
       method: 'GET'
 
     },( err, res, data ) => {
