@@ -14,15 +14,17 @@ body
 	.container(style='padding-top:10px')
 		nav.navbar
 			p.navbar-item.is-centered
-				a.button.is-medium.is-info(href='./home.html') 課程介紹
-			p.navbar-item.is-centered
-				a.button.is-medium.is-info(href='./ppts.html') 教材與講義
-			p.navbar-item.is-centered
 				img(src='./asset/images/oit.png', alt='亞東技術學院資管系', style='height: 120px;')
 			p.navbar-item.is-centered
-				a.button.is-medium.is-info(href='vedio.html') 數位教材-影音
+				a.button.is-medium.is-info(href='./home.html') 課程介紹
 			p.navbar-item.is-centered
-				a.button.is-medium.is-info(href='flash.html')= '模擬考測驗題 (Flash)'
+				a.button.is-medium.is-info(href='./ppts.html') 課程簡報
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='vedio.html') 影音教材
+			p.navbar-item.is-centered
+				a.button.is-medium.is-info(href='flash.html') 模擬測驗
+			p.navbar-item.is-centered
+				a.button.is-medium.is-success(href='flash.html') 章節教室
 
 		block content
 	//- script(src='https://code.jquery.com/jquery-2.1.4.min.js')
