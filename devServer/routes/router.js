@@ -12,26 +12,15 @@ var data = require('../data');
 // console.log('data', data.vedio);
 
 router.get('/vedio', (req, res, next) => {
-  res.render('vedio', { data : data.vedio });
+  res.render('vedio', { vedio : data.vedio });
 });
 
 router.get('/ppts', (req, res, next) => {
-  res.render('ppts', { data : data.ppts });
-});
-
-router.get('/ppts2', (req, res, next) => {
-  res.render('ppts2', { data : data.ppts2 });
+  res.render('ppts', { ppts : data.ppts.concat(data.ppts2), });
 });
 
 router.get('/flash', (req, res, next) => {
   res.render('flash');
-});
-
-router.get('/room/', (req, res, next) => {
-	res.render('room', {
-		vedio : data.vedio,
-		ppts : data.ppts.concat(data.ppts2),
-	});
 });
 
 router.get('/:page', (req, res, next) => {

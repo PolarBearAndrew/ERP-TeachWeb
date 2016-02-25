@@ -6,8 +6,6 @@ var list = [
 	{ page: 'flash', },
 	{ page: 'vedio', },
 	{ page: 'ppts', },
-	{ page: 'ppts2', },
-	{ page: 'room', },
 ];
 
 module.exports = list;
